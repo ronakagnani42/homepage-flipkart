@@ -1,0 +1,153 @@
+body {
+  background-color: #f1f3f6;
+  font-size: 14px;
+}
+
+a,
+img {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+.nav-item {
+  margin-left: 8px !important;
+  margin-right: 8px !important ;
+}
+
+/* Category wise Menu */
+
+.menu {
+  min-height: 112px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.menu-block {
+  display: flex;
+  flex-direction: row;
+  max-width: 1280px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 22px;
+}
+
+.menu-item {
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.menu-img {
+  height: 64px;
+  width: 64px;
+}
+
+.menu-txt {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Deals of the day and budget buys tab*/
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  border-top: 1px solid #eaeaea;
+  height: 100%;
+  margin: 0px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.banner-item {
+  flex-grow: 1;
+  overflow: auto;
+  display: block;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  width: auto;
+}
+
+.banner-item-head {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: auto;
+}
+
+.banner-txt {
+  font-size: 22px !important;
+  line-height: 32px !important;
+  display: inline-block !important;
+  font-weight: 500 !important;
+  margin: 0px;
+}
+
+.banner-clock {
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+  margin-left: 60px;
+  font-size: 16px;
+  color: #7f7f7f;
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+.clk-img {
+  height: 24px;
+  width: 24px;
+  margin: 0 10px 0px -35px;
+}
+
+.ban-slide {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 1570px;
+}
+
+.ban-slide-item {
+  width: 195px !important;
+  padding: 25px 15px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  max-height: 288px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.ban-slide-item-img {
+  width: 150px;
+  height: 150px;
+}
+
+.ban-slide-item-txt {
+  margin-top: 9px;
+  text-overflow: ellipsis;
+}
+
+.ban-ad {
+  display: block;
+  box-sizing: border-box;
+  border-top: 0px none;
+  border-right: 0px none;
+  flex: 0 0 248px;
+  max-width: 248px;
+  padding: 0px 0px 0px 10px;
+  width: 16.66% !important;
+  align-items: center;
+  height: 354px;
+}
