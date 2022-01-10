@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="1220366_flipkart_icon.png" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Flipkart</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <div class="mx-auto d-sm-flex flex-sm-nowrap">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./images/flipkart-logo.png"
+            alt="Flipkart"
+            width="auto"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        
+        <form class="d-flex pe-5">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search for products,brands and more"
+            aria-label="Search"
+          />
+          <button class="btn btn-light" type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </button>
+        </form>
+
+        <ul
+          class="navbar-nav navbar-nav-scroll ps-5"
+          style="--bs-scroll-height: 101px"
+        >
+          <li class="nav-item btn-group">
+            <button
+              type="button"
+              class="btn btn-light dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Login
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li>
+                <a class="dropdown-item" href="#"
+                  >New Customer? Sign up</a
+                >
+              </li>
+              <hr class="dropdown-divider" />
+              <li><a class="dropdown-item" href="#">Login</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link active dropdown-toggle"
+              href="#"
+              id="navbarScrollingDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="true"
+            >
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Sell On Flipkart</a></li>
+              <hr class="dropdown-divider" />
+              <li><a class="dropdown-item" href="#">24x7 Customer Care</a></li>
+              <hr class="dropdown-divider" />
+              <li>
+                <a class="dropdown-item" href="#">Download App</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-cart-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                />
+              </svg>
+              &nbsp;Cart
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Category wise menu -->
+    <div class="menu">
+      <div class="menu-block">
+        <a href="">
+          <div class="menu-item">
+            <img class="menu-img" src="./images/offers.png" alt="Top Offers" />
+            <div class="menu-txt">Top Offers</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="menu-item">
+            <img class="menu-img" src="./images/fashion.png" alt="Fashion" />
+            <div class="menu-txt">Fashion</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="menu-item">
+            <img class="menu-img" src="./images/mobile.png" alt="Mobile" />
+            <div class="menu-txt">Mobile</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="menu-item">
+            <img
+              class="menu-img"
+              src="./images/electronic.png"
+              alt="Electronic"
+            />
+            <div class="menu-txt">Electronics</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="menu-item">
+            <img class="menu-img" src="./images/surf.png" alt="Grocery" />
+            <div class="menu-txt">Grocery</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="menu-item">
+            <img class="menu-img" src="./images/home.jpg" alt="Home" />
+            <div class="menu-txt">Home</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="menu-item">
+            <img
+              class="menu-img"
+              src="./images/appliences.png"
+              alt="Appliences"
+            />
+            <div class="menu-txt">Appliances</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="menu-item">
+            <img class="menu-img" src="./images/travel.png" alt="Travel" />
+            <div class="menu-txt">Travel</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="menu-item">
+            <img class="menu-img" src="./images/toys.png" alt="" />
+            <div class="menu-txt">Beauty,Toys & More</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Deals of the day tab -->
+    <div class="banner">
+      <div class="banner-item">
+        <div class="banner-item-head">
+          <div>
+            <h2 class="banner-txt">Deals of the day</h2>
+            <div class="banner-clock">
+              <img
+                class="clk-img"
+                src="./images/banner/timer_a73398.svg"
+                alt="Timer"
+              />
+              <span id="digital-clock">
+                <script src="./js/clock.js"></script>
+              </span>
+              Left
+            </div>
+            <div class="float-end">
+              <a class="btn btn-primary" href="#" role="button">View All</a>
+            </div>
+          </div>
+        </div>
+        <div class="ban-slide">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active d-flex">
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/banner/led.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      LED Bulbs & more
+                    </div>
+                    <div class="ban-slide-item-txt text-success">From ₹99</div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Eveready, Philips & more
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/banner/sparkfoot.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      Sparx, Bruton & more
+                    </div>
+                    <div class="ban-slide-item-txt text-success">
+                      From ₹199+Extra10%off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Casual Shoes For Men's
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/banner/curtains.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      Cushions, Curtains & more
+                    </div>
+                    <div class="ban-slide-item-txt text-success">
+                      From ₹99+Extra10%off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Never Before...
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/banner/kurti.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      Kurtas, Sets & more
+                    </div>
+                    <div class="ban-slide-item-txt text-success">
+                      From ₹249+Extra10%off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Libas, Gerua, & more
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/banner/powerbank.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      Top Selling PowerBanks
+                    </div>
+                    <div class="ban-slide-item-txt text-success">From ₹499</div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Best Selling..
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/banner/cover.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      Plain Mobile Covers
+                    </div>
+                    <div class="ban-slide-item-txt text-success">Just ₹179</div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      For All Top Models
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/banner/watch.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      Casio, Fastrack, Sonata...
+                    </div>
+                    <div class="ban-slide-item-txt text-success">
+                      From ₹249+Extra10%off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Selling Fast! Grab Now!
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/banner/protein.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">Healthcare</div>
+                    <div class="ban-slide-item-txt text-success">
+                      From ₹599+Extra10%off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Masks, Vitamins, Ayurveda & More
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ban-ad">
+        <a href="./images/banner/adv.jpg"
+          ><img
+            style="width: 238px; height: 373px; border: 5px solid white"
+            src="./images/banner/adv.jpg"
+            alt="AD"
+        /></a>
+      </div>
+    </div>
+
+    <!-- budget buys tab -->
+    <div class="banner pt-0">
+      <div class="banner-item">
+        <div class="banner-item-head">
+          <div>
+            <h2 class="banner-txt">Fashion Budget Buys</h2>
+            <div class="float-end">
+              <a class="btn btn-primary" href="#" role="button">View All</a>
+            </div>
+          </div>
+        </div>
+        <div class="ban-slide">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active d-flex">
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/budget_buys/gowns.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      Gowns & Lehenga Cholis
+                    </div>
+                    <div class="ban-slide-item-txt text-success">From ₹299</div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Anarkali, Straight & more
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/budget_buys/jacket.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      Jackets, Sweatshirts & more
+                    </div>
+                    <div class="ban-slide-item-txt text-success">
+                      Min 40% Off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Winter is Here!
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/budget_buys/roadster.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      GAP, Puma, Roadster...
+                    </div>
+                    <div class="ban-slide-item-txt text-success">
+                      Min 55% Off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Jackets, Sweatshirts & more
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/budget_buys/puma.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      Puma, Wildcraft
+                    </div>
+                    <div class="ban-slide-item-txt text-success">
+                      Min 40% Off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Sweatshirts, Jackets & more
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/budget_buys/denim.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">Denim Jackets</div>
+                    <div class="ban-slide-item-txt text-success">
+                      Upto 65% Off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Must Haves!
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/budget_buys/cargos.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">Cool Cargos</div>
+                    <div class="ban-slide-item-txt text-success">
+                      Up to 60% Off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Grab or Gone!
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/budget_buys/midi.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      Women's Midi Dress
+                    </div>
+                    <div class="ban-slide-item-txt text-success">
+                      Min 50% Off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Zimaleto, Sassafras & more
+                    </div>
+                  </a>
+                </div>
+                <div class="ban-slide-item">
+                  <a href="">
+                    <div>
+                      <img
+                        class="an-slide-item-img"
+                        src="./images/budget_buys/blazer.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ban-slide-item-txt fw-bold">
+                      Party blazers for men
+                    </div>
+                    <div class="ban-slide-item-txt text-success">
+                      50-80% Off
+                    </div>
+                    <div class="ban-slide-item-txt text-secondary">
+                      Hangup
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
